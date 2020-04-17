@@ -1,0 +1,55 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <BorderPane>
+        <center>
+            <GridPane hgap="70" vgap="30">
+                <Text GridPane.rowIndex="0" GridPane.columnIndex="0" style="-fx-font-weight: bold">Neuen Film erstellen</Text>
+                <Text GridPane.columnIndex="0" GridPane.rowIndex="1">Name</Text>
+                <Text GridPane.columnIndex="0" GridPane.rowIndex="2">FSK</Text>
+                <Text GridPane.columnIndex="0" GridPane.rowIndex="3">Kategorien</Text>
+                <RadioButton GridPane.columnIndex="0" GridPane.rowIndex="4" text="Normal">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="group1"/>
+                    </toggleGroup>
+                </RadioButton>
+                <Button GridPane.columnIndex="0" GridPane.rowIndex="5" text="Abbrechen"/>
+                <RadioButton GridPane.columnIndex="1" GridPane.rowIndex="4" text="3D" toggleGroup="$group1"/>
+                <TextField GridPane.columnIndex="2" GridPane.rowIndex="1" prefWidth="110"/>
+                <ComboBox GridPane.columnIndex="2" GridPane.rowIndex="2" prefWidth="110">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="0"/>
+                            <String fx:value="6"/>
+                            <String fx:value="12"/>
+                            <String fx:value="16"/>
+                            <String fx:value="18"/>
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+                <ComboBox GridPane.columnIndex="2" GridPane.rowIndex="3" prefWidth="110">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Fantasy"/>
+                            <String fx:value="Thriller"/>
+                            <String fx:value="Horror"/>
+                            <String fx:value="Action"/>
+                            <String fx:value="Drama"/>
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+                <RadioButton GridPane.columnIndex="2" GridPane.rowIndex="4" text="4D" toggleGroup="$group1"/>
+                <Button GridPane.columnIndex="2" GridPane.rowIndex="5" text="Hinzufügen"/>
+            </GridPane>
+        </center>
+    </BorderPane>
+</GridPane>
