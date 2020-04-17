@@ -1,0 +1,42 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Spinner?>
+<?import java.lang.Integer?>
+<?import javafx.scene.control.ColorPicker?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <BorderPane>
+        <center>
+            <GridPane hgap="70" vgap="30">
+                <Text GridPane.rowIndex="0" GridPane.columnIndex="0" style="-fx-font-weight: bold">Neuen Raum
+                    erstellen
+                </Text>
+                <Text GridPane.columnIndex="0" GridPane.rowIndex="1">Name</Text>
+                <Text GridPane.columnIndex="0" GridPane.rowIndex="2">Reihen</Text>
+                <Text GridPane.columnIndex="0" GridPane.rowIndex="3">Spalten</Text>
+                <Text GridPane.columnIndex="0" GridPane.rowIndex="4">Farbe</Text>
+                <RadioButton GridPane.columnIndex="0" GridPane.rowIndex="5" text="Normal">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="group1"/>
+                    </toggleGroup>
+                </RadioButton>
+                <Button GridPane.columnIndex="0" GridPane.rowIndex="6" text="Abbrechen"/>
+                <RadioButton GridPane.columnIndex="1" GridPane.rowIndex="5" text="3D" toggleGroup="$group1"/>
+                <TextField GridPane.columnIndex="2" GridPane.rowIndex="1" prefWidth="110"/>
+                <Spinner GridPane.columnIndex="2" GridPane.rowIndex="2" min="3" max="15" amountToStepBy="1"/>
+                <Spinner GridPane.columnIndex="2" GridPane.rowIndex="3" min="3" max="15" amountToStepBy="1"/>
+                <ColorPicker GridPane.columnIndex="2" GridPane.rowIndex="4" prefWidth="110"/>
+                <RadioButton GridPane.columnIndex="2" GridPane.rowIndex="5" text="4D" toggleGroup="$group1"/>
+                <Button GridPane.columnIndex="2" GridPane.rowIndex="5" text="Hinzufügen"/>
+            </GridPane>
+        </center>
+    </BorderPane>
+</GridPane>
