@@ -1,0 +1,25 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<GridPane hgap="70" vgap="30" fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml">
+
+        <Text GridPane.rowIndex="0" GridPane.columnIndex="0" style="-fx-font-weight: bold">Neue Reservation erstellen</Text>
+        <Text GridPane.columnIndex="0" GridPane.rowIndex="1">Vorname</Text>
+    <Text GridPane.columnIndex="0" GridPane.rowIndex="2">Nachname</Text>
+        <Text GridPane.columnIndex="0" GridPane.rowIndex="3">Raumname</Text>
+        <Text GridPane.columnIndex="0" GridPane.rowIndex="4">Sitzplätze</Text>
+        <Text GridPane.columnIndex="0" GridPane.rowIndex="5">Film</Text>
+        <Text GridPane.columnIndex="0" GridPane.rowIndex="6">Zeitangabe</Text>
+        <Button GridPane.columnIndex="0" GridPane.rowIndex="7">Abbrechen</Button>
+        <Button GridPane.columnIndex="3" GridPane.rowIndex="7">Hinzufügen</Button>
+        <TextField GridPane.columnIndex="3" GridPane.rowIndex="1" prefWidth="110"></TextField>
+        <TextField GridPane.columnIndex="3" GridPane.rowIndex="2" prefWidth="110"></TextField>
+        <ComboBox GridPane.columnIndex="3" GridPane.rowIndex="3" prefWidth="110"></ComboBox>
+        <ComboBox GridPane.columnIndex="3" GridPane.rowIndex="4" prefWidth="110"></ComboBox>
+        <ComboBox GridPane.columnIndex="3" GridPane.rowIndex="5" prefWidth="110"></ComboBox>
+        <DatePicker GridPane.columnIndex="3" GridPane.rowIndex="6"></DatePicker>
+</GridPane>
