@@ -1,0 +1,21 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <BorderPane>
+        <center>
+            <GridPane hgap="70" vgap="30">
+                <Text GridPane.columnIndex="1" GridPane.rowIndex="1" style="-fx-font-size: 24">KINOVERWALTUNG</Text>
+                <Button GridPane.columnIndex="1" GridPane.rowIndex="2">Vorstellung anzeigen</Button>
+                <Button GridPane.columnIndex="1" GridPane.rowIndex="3">Filme anzeigen</Button>
+                <Button GridPane.columnIndex="1" GridPane.rowIndex="4">Raum anzeigen</Button>
+                <Button GridPane.columnIndex="1" GridPane.rowIndex="5">Reservieren</Button>
+                </GridPane>
+        </center>
+    </BorderPane>
+</GridPane>
